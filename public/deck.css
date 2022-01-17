@@ -3,12 +3,69 @@ white-space: pre;
 
 font-size: x-large;
 }
+.newimg {
+  width: 100%; /* or any custom size */
+  height: 100%; 
+  object-fit: contain;
+}
 
+#pos1{
+  width: 250px;
+  height: 250px;
+  margin-left: 45%;
+}
 
-#display-array{
-    margin-top: 10%;
-    margin-left: 40%;
+#pos2{
+  width: 250px;
+  height: 250px;
+  margin-left: 40%;
+}
 
+#pos3{
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+}
+
+#pos4{
+  width: 250px;
+  height: 250px;
+  margin-left: 50%;
+}
+
+#pos5{
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+}
+
+#pos6{
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+}
+#pos7{
+  width: 250px;
+  height: 250px;
+  margin-left: 60%;
+}
+
+#pos8{
+  width: 250px;
+  height: 250px;
+  margin-left: 60%;
+}
+
+#pos9{
+  width: 250px;
+  height: 250px;
+  margin-left: 60%;
+}
+
+#pos10{
+  width: 250px;
+  height: 250px;
+  margin-left: 60%;
 }
 
 .button-72 {
@@ -28,8 +85,7 @@ font-size: x-large;
   letter-spacing: .04em;
   line-height: 16px;
   padding: 18px 18px;
-  margin-top: 1%;
-  margin-left: 40%;
+    margin-left: 40%;
   text-align: center;
   text-decoration: none;
   text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;

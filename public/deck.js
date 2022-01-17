@@ -99,7 +99,7 @@ class Deck{
             var crd = this.deal_card(removedCard);
             this.return_card(removedCard)
             console.log("position",i,":",crd);
-            cross.push(`Position ${i}: ${crd}\n`);            
+            cross.push(`${crd}\n`);            
         }  
         return cross;
         
@@ -114,9 +114,30 @@ class Deck{
 
 let d = new Deck();
 
-
+function empty(element) {
+    element.innerHTML = ""; 
+ }
 
 
 function reading(){
-    document.getElementById("display-array").textContent = d.cross().join("\r\n");
+    var reading = d.cross();
+
+
+    for (let i = 1; i < 11; i++){
+        let parent = document.getElementById(`pos${i}`);
+        empty(parent);
     }
+    
+    for (let i = 1; i < 11; i++){
+        //document.getElementById(`pos${i}`).textContent = reading[i-1]//.join("\r\n");
+        var img = document.createElement('img');
+        img.src = `images/${reading[i-1]}.jpg`
+        img.style.width = "100%";
+        img.style.height = "100%";
+        img.style.objectFit = "contain";
+        console.log(img.src)
+        document.getElementById(`pos${i}`).appendChild(img)
+
+    }
+    
+}
