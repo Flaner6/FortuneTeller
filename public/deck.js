@@ -73,10 +73,13 @@ class Deck{
     deal_card(card){
         let rand = Math.random()*100;
         if (rand > 40){
+            
             return card
         }
         else{
+            
             return `${card} reversed`
+            
         }
     }
 
@@ -129,16 +132,27 @@ function reading(){
     }
     var readingList = [];
     for (let i = 1; i < 11; i++){
+
         var cardName = reading[i-1];
         readingList.push(`Position ${i}: ${cardName}`);
+
+        let pattern = / reversed/g;
+        let cardPath = cardName.replace(pattern,'')
         var img = document.createElement('img');
-        img.src = `images/${reading[i-1]}.jpg`
+        img.src = `images/${cardPath}.jpg`
+
         img.style.width = "100%";
         img.style.height = "100%";
         img.style.objectFit = "contain";
+        
+        if (pattern.test(cardName) == true){
+            img.style.transform = "scaleY(-1)"
+        }
+
         console.log(img.src)
         document.getElementById(`pos${i}`).appendChild(img)
         document.getElementById('theReading').textContent = readingList.join("\r\n");
+
     }
     
 }
