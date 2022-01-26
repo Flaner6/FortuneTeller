@@ -127,9 +127,10 @@ function reading(){
         let parent = document.getElementById(`pos${i}`);
         empty(parent);
     }
-    
+    var readingList = [];
     for (let i = 1; i < 11; i++){
-        //document.getElementById(`pos${i}`).textContent = reading[i-1]//.join("\r\n");
+        var cardName = reading[i-1];
+        readingList.push(`Position ${i}: ${cardName}`);
         var img = document.createElement('img');
         img.src = `images/${reading[i-1]}.jpg`
         img.style.width = "100%";
@@ -137,7 +138,7 @@ function reading(){
         img.style.objectFit = "contain";
         console.log(img.src)
         document.getElementById(`pos${i}`).appendChild(img)
-
+        document.getElementById('theReading').textContent = readingList.join("\r\n");
     }
     
 }
