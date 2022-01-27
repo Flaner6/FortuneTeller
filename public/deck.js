@@ -28,7 +28,7 @@ class Card {
 
         }
     turn(){
-        return `${this['value']} of ${this['suit']} `
+        return `${this['value']} of ${this['suit']}`
     }
 }
 
@@ -47,7 +47,7 @@ class Deck{
         let suits = ["Cups", "Pentacles", "Wands", "Swords"];
         let values = ['Ace','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Page','Knight','Queen','King'];
         let majors = ['The Fool','The Magician','The High Priestess','The Empress','The Emperor','The Hierophant','The Lovers','The Chariot','Strength','The Hermit',
-        'Wheel of Fortune','Justice','The Hanged Man','Death','Temperance','The Devil','The Tower','The Star','The Moon','The Sun','Judgement','The World'];
+        'Wheel of Fortune','Justice','The Hanged Man','Death','Ace of Cups','Temperance','The Devil','The Tower','The Star','The Moon','The Sun','Judgement','The World'];
         this.cards = [];
         for (let i = 0; i < suits.length; i++) {
             for (let j = 0; j < values.length; j++){
