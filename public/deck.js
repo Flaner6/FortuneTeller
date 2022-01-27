@@ -121,20 +121,14 @@ class Deck{
 
 let d = new Deck();
 
-function empty(element) {
-    //with this function we empty out site from previous reading
-    element.innerHTML = ""; 
- }
+
 
 
 function reading(){
     var reading = d.cross();
 
 
-    for (let i = 1; i < 11; i++){
-        let parent = document.getElementById(`pos${i}`);
-        empty(parent);
-    }
+
     var readingList = [];
     for (let i = 1; i < 11; i++){
 
@@ -164,4 +158,29 @@ function reading(){
 
     }
     
+}
+
+
+
+
+
+
+function empty(element) {
+    //with this function we empty out site from previous reading
+    element.innerHTML = ""; 
+ }
+
+
+
+var timesClicked = 0;
+
+function WhichClick() {
+    timesClicked++;
+
+    if (timesClicked>1) {
+        for (let i = 1; i < 11; i++){
+            let parent = document.getElementById(`pos${i}`);
+            empty(parent);
+        }
+    } 
 }

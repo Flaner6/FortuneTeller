@@ -1,8 +1,10 @@
 body{
 white-space: pre;
 
-font-size: x-large;
+font-size: large;
 }
+
+
 .newimg {
   width: 100%; /* or any custom size */
   height: 100%; 
@@ -14,68 +16,21 @@ font-size: x-large;
 
   display: flex;
   text-align: center;
+  height: 500px;
+  width: 500px;
+}
+
+
+.test {
+  /* We first create a flex layout context */
+  display: flex;
+
+  
+  border: 1px solid #999999;
 }
 
 
 
-#pos1{
-  width: 250px;
-  height: 250px;
-  margin-left: 45%;
-}
-
-#pos2{
-  width: 250px;
-  height: 250px;
-  margin-left: 40%;
-}
-
-#pos3{
-  width: 250px;
-  height: 250px;
-  margin-left: 30%;
-}
-
-#pos4{
-  width: 250px;
-  height: 250px;
-  margin-left: 50%;
-}
-
-#pos5{
-  width: 250px;
-  height: 250px;
-  margin-left: 30%;
-}
-
-#pos6{
-  width: 250px;
-  height: 250px;
-  margin-left: 30%;
-}
-#pos7{
-  width: 250px;
-  height: 250px;
-  margin-left: 60%;
-}
-
-#pos8{
-  width: 250px;
-  height: 250px;
-  margin-left: 60%;
-}
-
-#pos9{
-  width: 250px;
-  height: 250px;
-  margin-left: 60%;
-}
-
-#pos10{
-  width: 250px;
-  height: 250px;
-  margin-left: 60%;
-}
 
 .button-72 {
   align-items: center;
@@ -113,4 +68,76 @@ font-size: x-large;
     font-size: 21px;
     padding: 18px 34px;
   }
+}
+
+
+
+
+#pos1{
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  margin-top: 230px;
+  
+}
+
+#pos2{
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg);
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 250px;
+  
+}
+
+#pos3{
+  width: 200px;
+  height: 200px;
+  
+}
+
+#pos4{
+  width: 200px;
+  height: 200px;
+  margin-top: 300px;
+  
+}
+
+#pos5{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-top: 40px;
+  
+}
+
+#pos6{
+  width: 200px;
+  height: 200px;
+  margin-top: 300px;
+  
+}
+#pos7{
+  width: 200px;
+  height: 200px;
+  
+}
+
+#pos8{
+  width: 200px;
+  height: 200px;
+  
+}
+
+#pos9{
+  width: 200px;
+  height: 200px;
+  
+}
+
+#pos10{
+  width: 200px;
+  height: 200px;
+  
 }
