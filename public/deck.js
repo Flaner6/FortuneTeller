@@ -66,7 +66,7 @@ class Deck{
     
 
     remove_card(){
-  
+        //we need to remove the cards that have been drawn from the list
         let card = this.cards.pop();
         return card;        
     }
@@ -98,9 +98,13 @@ class Deck{
         shuffle(this.cards)
         let cross = [];
         for (let i = 1; i < 11; i++){
+
             let removedCard = this.remove_card();
             var crd = this.deal_card(removedCard);
+
+            //we put the removed card back in to restore it inside the list
             this.return_card(removedCard)
+
             console.log("position",i,":",crd);
             cross.push(`${crd}\n`);            
         }  
@@ -118,6 +122,7 @@ class Deck{
 let d = new Deck();
 
 function empty(element) {
+    //with this function we empty out site from previous reading
     element.innerHTML = ""; 
  }
 
@@ -133,14 +138,18 @@ function reading(){
     var readingList = [];
     for (let i = 1; i < 11; i++){
 
+        //we store the card name in a variable
+
         var cardName = reading[i-1];
         readingList.push(`Position ${i}: ${cardName}`);
 
+
+        //we check if we have a reversed card or not and style accordingly
+        //we generate the card path from the card name without the "reversed" part
         let pattern = / reversed/g;
         let cardPath = cardName.replace(pattern,'')
         var img = document.createElement('img');
         img.src = `images/${cardPath}.jpg`
-
         img.style.width = "100%";
         img.style.height = "100%";
         img.style.objectFit = "contain";
