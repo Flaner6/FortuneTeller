@@ -44,7 +44,7 @@ class MajorArcana {
 
 class Deck{
     constructor(){
-        let suits = ["Cups", "Pentacles", "Clubs", "Swords"];
+        let suits = ["Cups", "Pentacles", "Wands", "Swords"];
         let values = ['Ace','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Page','Knight','Queen','King'];
         let majors = ['The Fool','The Magician','The High Priestess','The Empress','The Emperor','The Hierophant','The Lovers','The Chariot','Strength','The Hermit',
         'Wheel of Fortune','Justice','The Hanged Man','Death','Temperance','The Devil','The Tower','The Star','The Moon','The Sun','Judgement','The World'];
