@@ -88,6 +88,7 @@ font-size: large;
   position: absolute;
   margin-left: 30px;
   margin-top: 250px;
+  z-index: 10;
   
 }
 
