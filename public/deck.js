@@ -101,23 +101,23 @@ class Deck{
         shuffle(this.cards)
         let cross = [];
         do{
-            var num1 = prompt("Think of a number and write it");         
+            var num1 = prompt("Think of a number and write it");   
 
-        }while(!/^[0-9]|-[0-9]+$/.test(num1))
+        }while(!/^[0-9]|-[0-9]+$/.test(num1) && num1 != null)
+        if ( num1 != null){
+            for (let i = 1; i < 11; i++){
 
-        for (let i = 1; i < 11; i++){
+                let removedCard = this.remove_card();
+                var crd = this.deal_card(removedCard,num1);
 
-            let removedCard = this.remove_card();
-            var crd = this.deal_card(removedCard,num1);
+                //we put the removed card back in to restore it inside the list
+                this.return_card(removedCard)
 
-            //we put the removed card back in to restore it inside the list
-            this.return_card(removedCard)
-
-            console.log("position",i,":",crd);
-            cross.push(`${crd}\n`);            
-        }  
-        return cross;
-        
+                console.log("position",i,":",crd);
+                cross.push(`${crd}\n`);            
+            }  
+            return cross;
+        }
 
 
         
