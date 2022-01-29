@@ -143,10 +143,9 @@ function reading(){
         let pattern = / reversed/g;
         let cardPath = cardName.replace(pattern,'')
         var img = document.createElement('img');
+        img.setAttribute("id", "TarotPic");
         img.src = `images/${cardPath}.jpg`
-        img.style.width = "100%";
-        img.style.height = "100%";
-        img.style.objectFit = "contain";
+
         
         if (pattern.test(cardName) == true){
             img.style.transform = "scaleY(-1)"

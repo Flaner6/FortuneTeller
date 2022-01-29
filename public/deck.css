@@ -5,11 +5,6 @@ font-size: large;
 }
 
 
-.newimg {
-  width: 100%; /* or any custom size */
-  height: 100%; 
-  object-fit: contain;
-}
 
 
 #theReading{
@@ -84,10 +79,9 @@ font-size: large;
 #pos2{
   width: 200px;
   height: 200px;
-  transform: rotate(-90deg);
+  transform: rotate(-80deg);
   position: absolute;
-  margin-left: 30px;
-  margin-top: 250px;
+  margin-top: 220px;
   z-index: 10;
   
 }
@@ -141,4 +135,10 @@ font-size: large;
   width: 200px;
   height: 200px;
   
+}
+
+#TarotPic {
+  border: 1px solid black;
+  height: 100%; 
+  object-fit: contain;
 }
