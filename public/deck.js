@@ -70,8 +70,11 @@ class Deck{
         let card = this.cards.pop();
         return card;        
     }
-    deal_card(card){
-        let rand = Math.random()*100;
+    deal_card(card,num1){
+        
+
+        let num = Math.abs(Math.cos(num1))
+        let rand = Math.random()*100; + num
         if (rand > 40){
             
             return card
@@ -97,10 +100,15 @@ class Deck{
 
         shuffle(this.cards)
         let cross = [];
+        do{
+            var num1 = prompt("Think of a number and write it");         
+
+        }while(!/^[0-9]|-[0-9]+$/.test(num1))
+
         for (let i = 1; i < 11; i++){
 
             let removedCard = this.remove_card();
-            var crd = this.deal_card(removedCard);
+            var crd = this.deal_card(removedCard,num1);
 
             //we put the removed card back in to restore it inside the list
             this.return_card(removedCard)
