@@ -70,11 +70,12 @@ class Deck{
         let card = this.cards.pop();
         return card;        
     }
-    deal_card(card,num1){
+    deal_card(card,num1, num2){
         
 
-        let num = Math.abs(Math.cos(num1))
-        let rand = Math.random()*100; + num
+        let numA = Math.abs(Math.cos(num1))
+        let numB = Math.abs(Math.cos(num2))
+        let rand = Math.random()*100; + numA*3 + numB*5
         if (rand > 40){
             
             return card
@@ -104,6 +105,14 @@ class Deck{
             var num1 = prompt("Think of a number and write it");   
 
         }while(!/^[0-9]|-[0-9]+$/.test(num1) && num1 != null)
+
+        var response = prompt("Write your question or a relevant thought")
+        var num2 = 0;
+        for(const element of response){
+            num2 += element.charCodeAt(0);
+        }
+        alert("your number of power is: " + num2)
+
         if ( num1 != null){
             for (let i = 1; i < 11; i++){
 
