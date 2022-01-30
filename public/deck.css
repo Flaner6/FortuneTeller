@@ -1,7 +1,15 @@
 body{
 white-space: pre;
+color: azure;
+font-size: x-large;
 
-font-size: large;
+  /* The image used */
+  background-image: url("images/galaxy-stars-space-24-4k.jpg");
+
+
+  /* Center and scale the image nicely */
+  background-size: 2500px;
+  background-repeat: repeat;
 }
 
 
@@ -11,8 +19,8 @@ font-size: large;
 
   display: flex;
   text-align: center;
-  height: 500px;
-  width: 500px;
+  height: 200px;
+
 }
 
 
@@ -21,7 +29,7 @@ font-size: large;
   display: flex;
 
   
-  border: 1px solid #999999;
+  
 }
 
 

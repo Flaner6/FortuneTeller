@@ -156,15 +156,17 @@ function reading(){
 
         
         if (pattern.test(cardName) == true){
-            img.style.transform = "scaleY(-1)"
+            img.style.transform = "scaleY(-1)";
         }
 
         console.log(img.src)
-        document.getElementById(`pos${i}`).appendChild(img)
-        document.getElementById('theReading').textContent = readingList.join("\r\n");
+        document.getElementById(`pos${i}`).appendChild(img);
+        document.getElementById(`line${i}`).textContent=readingList[i-1];
 
     }
-    
+    //let List =  readingList.join("\r\n");
+    //document.getElementById('theReading').textContent = List;
+
 }
 
 
