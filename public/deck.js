@@ -189,7 +189,10 @@ function WhichClick() {
     if (timesClicked>1) {
         for (let i = 1; i < 11; i++){
             let parent = document.getElementById(`pos${i}`);
+            let line = document.getElementById(`line${i}`);
             empty(parent);
+            empty(line);
+            
         }
     } 
 }
