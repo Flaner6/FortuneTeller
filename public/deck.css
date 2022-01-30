@@ -8,8 +8,9 @@ font-size: x-large;
 
 
   /* Center and scale the image nicely */
-  background-size: 2500px;
-  background-repeat: repeat;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%
 }
 
 
