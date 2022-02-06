@@ -1,6 +1,8 @@
 body{
 white-space: pre;
-color: azure;
+color: rgb(219, 219, 219);
+font-weight: 900;
+font-family:initial ;
 font-size: x-large;
 
   /* The image used */
