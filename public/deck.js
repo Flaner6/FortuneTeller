@@ -165,7 +165,7 @@ function reading(){
 
         
         if (pattern.test(cardName) == true){
-            img.style.transform = "scaleY(-1)";
+            img.style.transform = "rotateY(180deg) rotateX(180deg)";
         }
 
         console.log(img.src)
