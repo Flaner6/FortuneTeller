@@ -1,3 +1,10 @@
+
+html{
+  overflow-y: scroll;
+  scrollbar-color: rgb(36, 154, 158) rgb(73, 24, 129);
+  scrollbar-width: thin;
+}
+
 body{
 white-space: pre;
 color: rgb(219, 219, 219);
@@ -5,15 +12,21 @@ font-weight: 900;
 font-family:initial ;
 font-size: x-large;
 
-  /* The image used */
-  background-image: url("images/galaxy-stars-space-24-4k.jpg");
+
+scrollbar-color: rgba(202, 4, 4, 0.979);
+
+/* The image used */
+
+background-image: url("images/galaxy-stars-space-24-4k.jpg") !important;
 
 
-  /* Center and scale the image nicely */
+/* Center and scale the image nicely */
 
-  background-repeat: no-repeat;
-  background-size: cover;
+background-repeat: no-repeat;
+
+background-size: cover;
 }
+
 
 
 
@@ -23,6 +36,7 @@ font-size: x-large;
   display: flex;
   text-align: center;
   height: 200px;
+  
 
 }
 
